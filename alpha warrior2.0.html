@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alpha Warriors Guild & THE ALPHA VIPERS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            background: linear-gradient(270deg, #0f0c29, #302b63, #24243e, #1b1b2f, #162447, #1f4068, #0f0c29);
+            background-size: 10000% 10000%;
+            animation: rgbBG 19s linear infinite;
+        }
+
+        @keyframes rgbBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 20px;
+            animation: fadeSlideDown 1.5s ease-out forwards;
+        }
+
+        @keyframes fadeSlideDown {
+            from {opacity: 0; transform: translateY(-50px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        header img {
+            width: 300px;
+            max-width: 90%;
+            margin-bottom: 15px;
+            filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.7));
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            background: linear-gradient(90deg, #ffd700, #fff8dc, #ffd700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: glow 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {text-shadow: 0 0 10px rgba(255,215,0,0.3);}
+            to {text-shadow: 0 0 25px rgba(255,215,0,0.6);}
+        }
+
+        header p {
+            font-size: 1.3rem;
+            margin-top: 10px;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 30px;
+            text-shadow: 0 0 10px rgba(255,215,0,0.5);
+        }
+
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .images img {
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+
+        .images img:hover {
+            transform: scale(1.05) rotate(-1deg);
+            box-shadow: 0 10px 30px rgba(255,215,0,0.5);
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 14px 30px;
+            background: linear-gradient(90deg, gold, #ffea80);
+            color: #000;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 0 20px rgba(255,215,0,0.4);
+            animation: pulse 3s ease-in-out infinite;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        @keyframes pulse {
+            0% {box-shadow: 0 0 15px rgba(255,215,0,0.4);}
+            50% {box-shadow: 0 0 30px rgba(255,215,0,0.7);}
+            100% {box-shadow: 0 0 15px rgba(255,215,0,0.4);}
+        }
+
+        .button:hover {
+            transform: scale(1.08);
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 2s ease forwards;
+        }
+
+        @keyframes fadeUp {
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        form {
+            max-width: 500px;
+            margin: 30px auto 0 auto;
+            text-align: left;
+        }
+
+        form input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        form input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/alpha-viper-logo.jpg" alt="Guild Logo">
+        <h1>Alpha Warriors Guild & THE ALPHA VIPERS</h1>
+        <p>Welcome to our official page</p>
+    </header>
+
+    <div class="content fade-in">
+        <h2>About Us</h2>
+        <p><strong>THE ALPHA VIPERS</strong> is our Free Fire guild and YouTube channel where we share
+            gameplay, tips, and exciting updates from our community.</p>
+
+        <h2>About Me</h2>
+        <p>Hi! I’m <strong>J. Tarun</strong>, 15 years old, living in Hyderabad.
+            I run this guild and the channel, and my dream is to become one of the best gaming YouTubers!</p>
+
+        <h2>My Content</h2>
+        <p>
+            On my channel you’ll experience <strong>thrilling live gaming sessions</strong>,
+            <strong>giveaways</strong> that reward loyal fans,
+            <strong>live tournaments</strong> where players battle for glory,
+            sneak peeks of <strong>upcoming events</strong>, and
+            plenty of exclusive <strong>Free Fire tips, tricks, and highlight videos</strong>.
+            Every stream is designed to be exciting, competitive, and community-focused —
+            so you’ll always have something new to watch!
+        </p>
+
+        <div class="images fade-in">
+            <img src="C:\Users\kjpta\OneDrive\Desktop\ALPHA WARRIORS MAIN\.vscode\images\images\dhaka-bangladesh-03-july-2025-260nw-2648969671.webp" alt="Gaming">
+            <img src="C:\Users\kjpta\OneDrive\Desktop\ALPHA WARRIORS MAIN\.vscode\images\images\Tournaments.jpg" alt="Tournaments">
+            <img src="C:\Users\kjpta\OneDrive\Desktop\ALPHA WARRIORS MAIN\.vscode\images\images\e9b675213974151.Y3JvcCwxMzgwLDEwODAsMjcwLDA.png" alt="Videos">
+        </div>
+
+        <h2>Watch Our YouTube Channel</h2>
+        <p>Subscribe to our channel to never miss a video:</p>
+        <a class="button" href="https://www.youtube.com/@JTarun-d2u9c" target="_blank">
+            Subscribe on YouTube
+        </a>
+
+        <h2>Join Our Guild</h2>
+        <p>Fill out the form below to apply. Your application will be sent to us via email:</p>
+
+        <form id="guildForm" action="https://formsubmit.co/jtarunhyd@gmail.com" method="POST">
+            <label for="rank">Free Fire Rank:</label>
+            <input type="text" id="rank" name="Rank" required>
+
+            <label for="level">Free Fire Level:</label>
+            <input type="number" id="level" name="Level" required>
+
+            <label for="playerId">Player ID:</label>
+            <input type="text" id="playerId" name="PlayerID" required>
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="thankyou.html">
+
+            <button type="submit" class="button">Submit Application</button>
+        </form>
+
+        <h2>Follow Us on Instagram</h2>
+        <p>Stay updated with our guild activities and latest content! Scan the QR code or click the button below:</p>
+        <div class="images fade-in">
+            <img src="images/instagram-qr.png" alt="Instagram QR Code" style="width:200px; height:auto; border-radius:16px; box-shadow:0 6px 20px rgba(0,0,0,0.4);">
+        </div>
+        <a class="button" href="https://www.instagram.com/the_alpha_warriors_/?igsh=MWcxdXp6N3pnenh3cA==" target="_blank">
+            Follow on Instagram
+        </a>
+    </div>
+</body>
+</html>
