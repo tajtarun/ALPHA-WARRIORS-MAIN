@@ -5,20 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You!</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
         body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            color: #fff;
-            background: linear-gradient(270deg, #0f0c29, #302b63, #24243e, #1b1b2f, #162447, #1f4068, #0f0c29);
-            background-size: 10000% 10000%;
-            animation: rgbBG 19s linear infinite;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
             text-align: center;
+            background: linear-gradient(270deg, #0f0c29, #302b63, #24243e, #1b1b2f, #162447, #1f4068, #0f0c29);
+            background-size: 10000% 10000%;
+            animation: rgbBG 19s linear infinite;
         }
 
         @keyframes rgbBG {
@@ -27,19 +25,19 @@
             100% {background-position: 0% 50%;}
         }
 
-        .thankyou-container {
-            max-width: 600px;
+        .container {
             padding: 40px;
             background: rgba(255, 255, 255, 0.05);
             border-radius: 20px;
             backdrop-filter: blur(10px);
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            animation: fadeSlideIn 1.5s ease-out forwards;
+            max-width: 600px;
+            animation: fadeIn 1.5s ease-in-out forwards;
         }
 
-        @keyframes fadeSlideIn {
-            from {opacity: 0; transform: translateY(-50px);}
-            to {opacity: 1; transform: translateY(0);}
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
         }
 
         h1 {
@@ -59,40 +57,32 @@
 
         p {
             font-size: 1.2rem;
-            line-height: 1.6;
+            margin: 0;
         }
 
-        .button {
+        .back-button {
             display: inline-block;
-            margin-top: 25px;
-            padding: 14px 30px;
-            background: linear-gradient(90deg, gold, #ffea80);
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: gold;
             color: #000;
             font-weight: 700;
-            font-size: 1.1rem;
             text-decoration: none;
             border-radius: 50px;
-            box-shadow: 0 0 20px rgba(255,215,0,0.4);
-            animation: pulse 3s ease-in-out infinite;
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: transform 0.3s;
         }
 
-        @keyframes pulse {
-            0% {box-shadow: 0 0 15px rgba(255,215,0,0.4);}
-            50% {box-shadow: 0 0 30px rgba(255,215,0,0.7);}
-            100% {box-shadow: 0 0 15px rgba(255,215,0,0.4);}
-        }
-
-        .button:hover {
-            transform: scale(1.08);
+        .back-button:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
-    <div class="thankyou-container">
+    <div class="container">
         <h1>Thank You!</h1>
-        <p>Your application has been successfully submitted. We will review it and get back to you soon.</p>
-        <a href="https://github.com/tajtarun/ALPHA-WARRIORS-MAIN/blob/main/index.html" class="button">Go Back to Home</a>
+        <p>Your application has been submitted successfully.</p>
+        <p>We will review it shortly. 😊</p>
+        <a href="index.html" class="back-button">Go Back Home</a>
     </div>
 </body>
 </html>
